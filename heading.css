@@ -1,0 +1,13 @@
+.hero h1 small {
+  display: block;
+  margin-top: 12px;
+  color: var(--green);
+  font-family: Hind, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (max-width: 720px) {
+  .hero h1 small { font-size: 17px; }
+}

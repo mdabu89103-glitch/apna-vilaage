@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>अपना गाँव | दुकानों की जानकारी</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="heading.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav container">
+      <a class="brand" href="#home"><span class="brand-mark">अ</span><span>अपना <b>गाँव</b></span></a>
+      <div class="nav-links">
+        <a href="#stores">दुकानें</a>
+        <a href="#about">हमारे बारे में</a>
+        <a class="nav-cta" href="#add-store">दुकान जोड़ें</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="hero-copy">
+        <p class="eyebrow">आपके गाँव की अपनी डिजिटल डायरेक्टरी · Your Village Digital Directory</p>
+        <h1>हर ज़रूरत की दुकान,<br /><em>अब एक ही जगह।</em><small>Every local store, all in one place.</small></h1>
+        <p class="hero-text">General Store से लेकर Cement Store तक—अपने गाँव की सभी दुकानों और उनकी जानकारी को आसानी से खोजें।</p>
+        <a class="primary-btn" href="#stores">दुकानें देखें <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+        <div class="hill hill-back"></div><div class="hill hill-front"></div>
+        <div class="shop-illustration"><div class="shop-roof"></div><div class="shop-board">अपना बाज़ार</div><div class="shop-door"></div><div class="window"></div></div>
+        <div class="tree"><i></i><i></i><i></i><b></b></div>
+      </div>
+    </div>
+    <div class="hero-wave"></div>
+  </header>
+
+  <main>
+    <section class="quick-search container" aria-label="दुकान खोजें">
+      <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="दुकान या सामान खोजें..." /></div>
+      <button class="location-btn" type="button">⌖ <span>मेरा गाँव</span></button>
+    </section>
+
+    <section class="stores-section container" id="stores">
+      <div class="section-heading">
+        <div><p class="eyebrow">लोकल दुकानें</p><h2>अपने आसपास की दुकानें</h2></div>
+        <p class="store-count"><b id="count">15</b> दुकानें उपलब्ध हैं</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="दुकान श्रेणियाँ">
+        <button class="filter active" data-filter="all">सभी</button>
+        <button class="filter" data-filter="general">किराना</button>
+        <button class="filter" data-filter="cement">सीमेंट / बिल्डिंग</button>
+        <button class="filter" data-filter="medical">मेडिकल</button>
+        <button class="filter" data-filter="food">खाने-पीने की</button>
+        <button class="filter" data-filter="service">सेवाएँ</button>
+      </div>
+
+      <div class="store-grid" id="storeGrid">
+        <article class="store-card" data-category="general" data-search="faruq फारुक general store"><div class="card-icon grocery">🛍️</div><div class="card-main"><span class="tag">जनरल स्टोर</span><h3>Faruq General Store</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="general" data-search="aftab अफताब general store"><div class="card-icon grocery">🛍️</div><div class="card-main"><span class="tag">जनरल स्टोर</span><h3>Aftab General Store</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="general" data-search="arbaj अरबाज furniture furniture store"><div class="card-icon clothes">▣</div><div class="card-main"><span class="tag">फर्नीचर स्टोर</span><h3>Arbaj Furniture</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="cement" data-search="cement सीमेंट store"><div class="card-icon cement">▦</div><div class="card-main"><span class="tag">सीमेंट / बिल्डिंग</span><h3>Cement Store</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="food" data-search="flour milling flour mill आटा चक्की"><div class="card-icon food">◉</div><div class="card-main"><span class="tag">आटा चक्की</span><h3>Flour Milling Shop</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="general" data-search="gagan गगन shiringar श्रृंगार store cosmetic"><div class="card-icon clothes">✦</div><div class="card-main"><span class="tag">श्रृंगार स्टोर</span><h3>Gagan Shiringar Store</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="medical" data-search="sagir सगीर medihub medical"><div class="card-icon medical">✚</div><div class="card-main"><span class="tag">मेडिकल स्टोर</span><h3>Sagir Medihub</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="general" data-search="kumdan कुमदान general store"><div class="card-icon grocery">🛍️</div><div class="card-main"><span class="tag">जनरल स्टोर</span><h3>Kumdan General Store</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="general" data-search="sohan सोहन general store"><div class="card-icon grocery">🛍️</div><div class="card-main"><span class="tag">जनरल स्टोर</span><h3>Sohan General Store</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="service" data-search="sahil साहिल motorcycle motor cycle repairing repair"><div class="card-icon cement">⚙</div><div class="card-main"><span class="tag">मोटरसाइकिल रिपेयरिंग</span><h3>Sahil Motorcycle Repairing</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="food" data-search="flour wheat sell shop आटा गेहूँ"><div class="card-icon farming">🌾</div><div class="card-main"><span class="tag">आटा / गेहूँ</span><h3>Flour & Wheat Sell Shop</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="service" data-search="ajit अजीत coaching center bridge पुल"><div class="card-icon medical">✎</div><div class="card-main"><span class="tag">कोचिंग सेंटर</span><h3>Ajit Coaching Center</h3><p>पुल के पास · जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ पुल के पास</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="general" data-search="sohani सोहानी general store"><div class="card-icon grocery">🛍️</div><div class="card-main"><span class="tag">जनरल स्टोर</span><h3>Sohani General Store</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+        <article class="store-card" data-category="medical" data-search="medihub medical मेडिहब"><div class="card-icon medical">✚</div><div class="card-main"><span class="tag">मेडिकल स्टोर</span><h3>Medihub</h3><p>सामान की जानकारी जल्द जोड़ी जाएगी</p><div class="meta"><span>⌖ गाँव में</span><span class="open">● जानकारी उपलब्ध</span></div></div></article>
+      </div>
+      <p class="no-results" id="noResults">इस नाम की कोई दुकान नहीं मिली। दूसरे शब्द से खोजें।</p>
+    </section>
+
+    <section class="add-store" id="add-store"><div class="container add-content"><div><p class="eyebrow">अपनी दुकान जोड़ें</p><h2>क्या आपकी दुकान भी यहाँ होनी चाहिए?</h2><p>अपने व्यापार को गाँव के हर व्यक्ति तक पहुँचाइए। दुकान की जानकारी जोड़ना बिलकुल आसान है।</p></div><a class="light-btn" href="mailto:hello@apnagaon.in?subject=मेरी%20दुकान%20जोड़ें">जानकारी भेजें <span>→</span></a></div></section>
+
+    <section class="about container" id="about"><div class="about-number">01</div><div><p class="eyebrow">हमारा उद्देश्य</p><h2>गाँव को आपस में जोड़ना</h2><p>अपना गाँव एक सरल प्लेटफ़ॉर्म है, जहाँ स्थानीय दुकानदार और गाँव के लोग एक-दूसरे से आसानी से जुड़ सकते हैं। सही दुकान तक पहुँचना अब और भी आसान है।</p></div></section>
+  </main>
+
+  <footer><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">अ</span><span>अपना <b>गाँव</b></span></a><p>आपके गाँव के लिए, आपके अपनों के साथ।</p><p>© 2026 अपना गाँव</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
