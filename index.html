@@ -17,7 +17,9 @@
     <nav class="nav container">
       <a class="brand" href="#home"><span class="brand-mark">अ</span><span>अपना <b>गाँव</b></span></a>
       <div class="nav-links">
+        <a href="#home">होम</a>
         <a href="#stores">दुकानें</a>
+        <a href="#how-it-works">कैसे काम करता है</a>
         <a href="#about">हमारे बारे में</a>
         <a class="nav-cta" href="#add-store">दुकान जोड़ें</a>
       </div>
@@ -25,10 +27,13 @@
 
     <div class="hero-content container">
       <div class="hero-copy">
-        <p class="eyebrow">आपके गाँव की अपनी डिजिटल डायरेक्टरी · Your Village Digital Directory</p>
-        <h1>हर ज़रूरत की दुकान,<br /><em>अब एक ही जगह।</em><small>Every local store, all in one place.</small></h1>
-        <p class="hero-text">General Store से लेकर Cement Store तक—अपने गाँव की सभी दुकानों और उनकी जानकारी को आसानी से खोजें।</p>
-        <a class="primary-btn" href="#stores">दुकानें देखें <span>→</span></a>
+        <p class="eyebrow">आपके गाँव की डिजिटल दुकान डायरेक्टरी</p>
+        <h1>हर ज़रूरत की दुकान,<br /><em>अब एक ही जगह।</em></h1>
+        <p class="hero-text">किराना, मेडिकल, बिल्डिंग सामग्री और सेवाएँ—अपने गाँव की जरूरी दुकानों की जानकारी तुरंत खोजें।</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#stores">दुकानें देखें <span>→</span></a>
+          <a class="text-btn" href="#add-store">अपनी दुकान जोड़ें</a>
+        </div>
       </div>
       <div class="hero-art" aria-hidden="true">
         <div class="sun"></div>
@@ -43,14 +48,21 @@
 
   <main>
     <section class="quick-search container" aria-label="दुकान खोजें">
-      <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="दुकान या सामान खोजें..." /></div>
+      <div class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" aria-label="दुकान या सामान खोजें" placeholder="दुकान या सामान खोजें, जैसे किराना या दवा" /></div>
       <button class="location-btn" type="button">⌖ <span>मेरा गाँव</span></button>
+    </section>
+
+    <section class="trust-strip container" aria-label="अपना गाँव की विशेषताएँ">
+      <div><strong>14+</strong><span>स्थानीय दुकानें</span></div>
+      <div><strong>6</strong><span>ज़रूरी श्रेणियाँ</span></div>
+      <div><strong>सरल</strong><span>खोज और फ़िल्टर</span></div>
+      <div><strong>निःशुल्क</strong><span>दुकान सूचीकरण</span></div>
     </section>
 
     <section class="stores-section container" id="stores">
       <div class="section-heading">
         <div><p class="eyebrow">लोकल दुकानें</p><h2>अपने आसपास की दुकानें</h2></div>
-        <p class="store-count"><b id="count">15</b> दुकानें उपलब्ध हैं</p>
+        <p class="store-count"><b id="count">14</b> दुकानें उपलब्ध हैं</p>
       </div>
 
       <div class="filters" role="tablist" aria-label="दुकान श्रेणियाँ">
@@ -81,7 +93,16 @@
       <p class="no-results" id="noResults">इस नाम की कोई दुकान नहीं मिली। दूसरे शब्द से खोजें।</p>
     </section>
 
-    <section class="add-store" id="add-store"><div class="container add-content"><div><p class="eyebrow">अपनी दुकान जोड़ें</p><h2>क्या आपकी दुकान भी यहाँ होनी चाहिए?</h2><p>अपने व्यापार को गाँव के हर व्यक्ति तक पहुँचाइए। दुकान की जानकारी जोड़ना बिलकुल आसान है।</p></div><a class="light-btn" href="mailto:hello@apnagaon.in?subject=मेरी%20दुकान%20जोड़ें">जानकारी भेजें <span>→</span></a></div></section>
+    <section class="how-it-works container" id="how-it-works">
+      <div class="section-heading"><div><p class="eyebrow">बहुत आसान</p><h2>सही दुकान तक पहुँचें</h2></div></div>
+      <div class="steps-grid">
+        <article><span class="step-number">01</span><div class="step-icon">⌕</div><h3>खोजें</h3><p>दुकान या अपनी जरूरत का सामान लिखकर तुरंत खोजें।</p></article>
+        <article><span class="step-number">02</span><div class="step-icon">☷</div><h3>श्रेणी चुनें</h3><p>किराना, मेडिकल, खाने-पीने की या सेवाओं में से चुनें।</p></article>
+        <article><span class="step-number">03</span><div class="step-icon">⌖</div><h3>जानकारी पाएँ</h3><p>दुकान का नाम, उपलब्ध सामान और उसकी जगह देखें।</p></article>
+      </div>
+    </section>
+
+    <section class="add-store" id="add-store"><div class="container add-content"><div><p class="eyebrow">अपनी दुकान जोड़ें</p><h2>क्या आपकी दुकान भी यहाँ होनी चाहिए?</h2><p>अपने व्यापार को गाँव के हर व्यक्ति तक पहुँचाइए। दुकान की जानकारी जोड़ना बिलकुल आसान है।</p></div><a class="light-btn" href="mailto:hello@apnagaon.in?subject=मेरी%20दुकान%20जोड़ें">दुकान की जानकारी भेजें <span>→</span></a></div></section>
 
     <section class="about container" id="about"><div class="about-number">01</div><div><p class="eyebrow">हमारा उद्देश्य</p><h2>गाँव को आपस में जोड़ना</h2><p>अपना गाँव एक सरल प्लेटफ़ॉर्म है, जहाँ स्थानीय दुकानदार और गाँव के लोग एक-दूसरे से आसानी से जुड़ सकते हैं। सही दुकान तक पहुँचना अब और भी आसान है।</p></div></section>
   </main>
